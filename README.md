@@ -34,26 +34,18 @@ Follow these steps to set up and run CalCall on your local machine.
    ```bash
    git clone https://github.com/origanoinitalian/CalCall.git
 
-2. Navigate to the project folder:
-    ```bash
-    cd CalCall
 
-3. Install the required dependencies:
+2. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
 
-4. Create a .env file in the project root and add the following environment variables:
+3. Create a .env file in the project root and add the following environment variables:
     ```plaintext
     # .env.example
     TELEGRAM_BOT_TOKEN=your-telegram-bot-token
     SERVICE_ACCOUNT_FILE=path/to/service-account-file.json
     DATABASE_URL=sqlite:///path/to/your/database.db
 
-Replace your-telegram-bot-token with your actual Telegram bot token.
-
-Replace path/to/service-account-file.json with the path to your Google Cloud Service Account credentials file.
-
-Replace path/to/your/database.db with the path to your SQLite database file 
 
 
 5. Run the bot:
@@ -62,9 +54,6 @@ Replace path/to/your/database.db with the path to your SQLite database file
     
 
 
-
-### **3. Keep Your `.env` File Private**
-- **Never commit your `.env` file to GitHub**. It contains sensitive information like your bot token and database URL.
 - Ensure your `.env` file is listed in your `.gitignore` file to prevent accidental commits:
   ```plaintext
   # Ignore environment variables
